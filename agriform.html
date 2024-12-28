@@ -1,0 +1,197 @@
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* section */
+        section{
+            margin-top: 100px;
+        }
+        section h2{
+            text-align: center;
+        }
+        .personal-col, .edu-col{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        .div-1, .div-2{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 500px;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(248, 248, 248);
+            font-family: 'Poppins', ;
+            font-size: 1rem;
+        }
+        .dropbox div{
+            margin: 30px;
+        }
+        .lang{
+            padding: 5px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            left: 530px;
+            width: 100px;
+        }
+        .course, .btn{
+            margin: 20px;
+        }
+        #course{
+            position: relative;
+            left: 25px;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #reset-btn, #submit-btn{
+            padding: 10px;
+            margin: 15px;
+            width: 100px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #reset-btn{
+            background-color: brown;
+            color:white;
+            border: none;
+            border-radius: 5px;
+        }
+        #submit-btn{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+body{background-color:white;}
+h1{color:"black" margin-left=40px text-align="left"}
+h2{color:"black" margin-left=40px text-align="left"}
+p{color:"black" margin-left=60px text-align="center"}
+
+.ma{
+        float:left;
+	     width:30%;
+	     height:30%;
+	  }
+</style>
+    </head>
+    <body>
+    <header>
+        <div class="ma">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/94/Tamil_Nadu_Agricultural_University_Logo.gif">
+        </div>
+        <h1>TAMILNADU AGRICULTURE UNIVERSITY</h1>
+        <h3>Coimbatore-641003</h3>
+        <h2>UNDER GRADUATE APPLICATION 2022-23</h2>
+        
+    </header>
+    <section>
+        <h2>Personal Info</h2>
+        <div class="personal-col">
+            <div class="div-1">
+            <input type="text" name="FirstName" id="FirstName" placeholder="First Name">
+            <input type="text" name="LastName" id="LastName" placeholder="last Name">
+            <input type="date"name="birthday" id="birthday" placeholder="Select DOB">
+            <input type="text" name="text" placeholder="Father Name">
+            <input type="text"name="text" placeholder="Mother Name">
+            <input type="text" name="Gender" id="Gender" placeholder="Gender">
+            </div>
+            <div class="div-2">
+                <input type="text" name="Nativity" id="" placeholder="Native">
+                <input type="text"name="Religion" placeholder="Religion">
+                <input type="text"name="Caste" placeholder="Caste">
+                <input type="text"name="Community" placeholder="Community">
+                <input type="text" name="Phone" id="phone-num" placeholder="Phone Number">
+                <input type="text"name="Email" placeholder="Email" id = 'Email'>
+                <input type="text" name="Address" id="address" placeholder="Address">
+            </div>
+        </div>
+
+        <h2>Education</h2>
+
+        <div class="edu-col">
+            <div class="div-1">
+                <input type="text" id="sub-grp" placeholder="subject group">
+                <div class="dropbox">
+                   <div>
+                    <label>First Graduate</label>
+                    <select class="lang">
+                        <option value="Yes">yes</option>
+                        <option value="No">No</option>
+                    </select>
+                   </div>
+                   <div>
+                    <label>Medium of Study</label>
+                    <select  class="lang">
+                        <option value="Tamil">Tamil</option>
+                        <option value="English">English</option>
+                    </select>
+                   </div>
+                   <div>
+                    <label>Mother Tongue</label>
+                    <select  class="lang">
+                        <option value="Tamil">Tamil</option>
+                        <option value="English">English</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Telugu">Telugu</option>
+                    </select>
+                   </div>
+                </div>
+                <input type="text" id="state" placeholder="State">
+                <input type="text" id="District" placeholder="District">
+                <input type="number" id="pincode" placeholder="PIN CODE">
+            </div>
+            <div class="div-2">
+                <input type="text" id="subjects" placeholder="12th Major subjects">
+                <input type="number"id="subjects" placeholder="10th Mark">
+                <input type="number" id="subjects" placeholder="10th Percentage">
+                <input type="number" id="subjects" placeholder="12th Mark">
+                <input type="number" id="subjects" placeholder="12th  Percentage">
+                <div class="course">
+                    <label>Courses: </label>
+                    <select id = "course" name="course">
+                        <option>B.SC(Hons)Agriculture-Coimbatore</option>
+                        <option>B.SC(Hons)Agriculture-Madurai</option>
+                        <option>B.SC(Hons)Agriculture-Trichy</option>
+                        <option>B.SC(Hons)Agriculture-Thanjavur</option>
+                        <option>B.SC(Hons)Agriculture-Tirunelveli</option>
+                        <option>B.SC(Hons)Agriculture-Pudulottai</option>
+                        <option>B.SC(Hons)Agriculture-Tiruvannamalai</option>
+                        <option>B.SC(Hons)Agriculture-Sivagangai</option>	
+                        <option>B.SC(Hons)Agriculture-Karur</option>
+                        <option>B.SC(Hons)Agriculture-Nagapattinam</option>
+                        <option>B.SC(Hons)Horticulture-Coimbatore</option>
+                        <option>B.SC(Hons)Horticulture-Jeenur</option>
+                        <option>B.SC(Hons)Horticulture-Periyakulam</option>
+                        <option>B.SC(Hons)Horticulture-Trichy</optio>
+                        <option>B.SC(Hons)Food-tech-Pollachi</option>
+                        <option>B.SC(Hons)Food-tech-Coimbatore</option>
+                        <option>B.SC(Hons)Food-tech-Chennai</option>
+                        <option>B.SC(Hons)Food-tech-Sathyamangalam</option>
+                        <option>B.SC(Hons)Food-tech-Perambalur</option>
+                        <option>B.SC(Hons)Food-tech-Virudhunagar</option>
+                        <option>B.SC(Hons)Food-tech-Perundurai</option>
+                        <option>B.SC(Hons)Food-tech-Thanjavur</option>
+                        <option>B.SC(Hons)Food-tech-Trichy</option>
+                        <option>B.SC(Hons)Food-tech-Salem</option>
+                        <option>B.SC(Hons)Food-tech-Madurai</option>
+                        <option>B.SC(Hons)Food-tech-Tiruvannamalai</option>
+                    </select>
+                </div>
+                <div class="btn">
+                    <button id = "reset-btn">Reset</button>
+                    <button id = "submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+    </html>
